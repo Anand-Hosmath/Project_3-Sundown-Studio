@@ -32,52 +32,7 @@ html, body {
     z-index: 11;
 }
 
-.loader {
-    height: 100%;
-    width: 100% ;
-    background-color: #0B0500;
-    position: fixed;
-    z-index: 200;
-    top: 0;
-    transition: all ease-out 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.loader h1 {
-    font-size: 3vw;
-    color: transparent;
-    background: linear-gradient(to right, orange, orangered);
-    -webkit-background-clip: text;
-    position: absolute;
-    opacity: 0;   
-    animation-name: load;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-timing-function: linear;
-}
-.loader h1:nth-child(2){
-    animation-delay: 2s;
-}
-.loader h1:nth-child(3){
-    animation-delay: 3s;
-}
-
-@keyframes load {
-    0%{
-        opacity: 0;
-    }
-    10%{
-        opacity: 1;
-    }
-    90%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}
 
 .page1 {
     min-height: 100vh;
@@ -533,13 +488,55 @@ nav h3 {
     border-bottom-right-radius: 20px;
 }
 
+.loader {
+    height: 100%;
+    width: 100% ;
+    background-color: #0B0500;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    transition: all ease-out 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.loader h1 {
+    font-size: 3vw;
+    color: transparent;
+    background: linear-gradient(to right, orange, orangered);
+    -webkit-background-clip: text;
+    position: absolute;
+    opacity: 0;   
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+.loader h1:nth-child(2){
+    animation-delay: 2s;
+}
+.loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 
 
 @media (max-width: 600px) {
-    .loader h1{
-        font-size: 9vw;
-    }
 
     .page1 {
         min-height: 100vh;
@@ -709,12 +706,8 @@ nav h3 {
         animation-timing-function: linear;
     }
     .gola {
-        display: inline-block;
-        height: 70px;
-        width: 70px;
-        border-radius: 50%;
-        background-color: #fe3f0a; 
-        margin: 2vw 2vw;
+        height: 35px;
+        width: 35px;
     }
     
     .page2-bottom {
@@ -820,6 +813,8 @@ nav h3 {
         font-size: 23vw;
     }
 
-
+    .loader h1{
+        font-size: 9vw;
+    }
 }
 
